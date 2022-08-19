@@ -34,7 +34,8 @@ print(dframe)
 dfr=pd.DataFrame({'Actual Data':y_test,'Predicted Data':predicted})
 print(dfr)
 from sklearn.metrics import confusion_matrix, accuracy_score
-regressor.score(x_test,y_test)
+score = regressor.score(x_test,y_test)
+print("Accuracy Score = ", score)
 import math
 print('Mean_absolute_Error: ', metrics.mean_absolute_error(y_test,predicted))
 print('Mean Squared Error: ',metrics.mean_squared_error(y_test,predicted))
